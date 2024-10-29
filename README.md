@@ -1,4 +1,4 @@
-# Calculator_MERN-stack
+# TaskFlow_Pro
 
 ## Backend
 To run the backend server:
@@ -10,5 +10,3 @@ npm start
 
 
 
-## Deployment
-This project is live on Netlify: [mern-calculator](https://mern-calculator.netlify.app)
