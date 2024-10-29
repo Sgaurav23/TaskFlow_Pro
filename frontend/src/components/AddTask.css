@@ -1,0 +1,31 @@
+.add-task {
+  display: flex; /* Flex layout for easy centering */
+  flex-direction: column; /* Column layout */
+  align-items: center; /* Center items horizontally */
+  margin-bottom: 20px; /* Space below the AddTask section */
+}
+
+.add-task input,
+.add-task textarea {
+  width: 80%; /* Full width inputs and textarea */
+  padding: 10px; /* Padding for inputs and textarea */
+  margin-bottom: 10px; /* Space between elements */
+  border: 1px solid #ced4da; /* Light grey border */
+  border-radius: 4px; /* Rounded corners */
+  background-color: #18222b; /* Grey background */
+  color: white; /* White text */
+}
+
+.add-task button {
+  background-color: #28a745; /* Green color for button */
+  color: white; /* White text color */
+  border: none; /* No border */
+  border-radius: 4px; /* Rounded corners */
+  padding: 10px 20px; /* Padding for button */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease; /* Smooth transition effect */
+}
+
+.add-task button:hover {
+  background-color: #218838; /* Darker green on hover */
+}

@@ -1,0 +1,94 @@
+  .task-list {
+   background-color: #343a40; /* Dark grey background */
+   border-radius: 8px; /* Rounded corners */
+   padding: 15px; /* Padding for spacing */
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+   text-align: left; /* Left align text */
+   width: 80%; /* Reduced width for center alignment */
+   margin: 0 auto; /* Center align in the parent container */
+   color: white; /* White text for contrast */
+ }
+ 
+ .task-list h3 {
+   color: #ffffff; /* White for heading */
+   margin-bottom: 15px; /* Spacing below the heading */
+ }
+ 
+ .task-list .feedback {
+   color: #ffc107; /* Yellow for feedback message */
+   margin-bottom: 15px; /* Spacing below feedback */
+ }
+ 
+ .task-list ul {
+   list-style: none; /* Remove default list style */
+   padding: 0; /* No padding */
+ }
+ 
+ .task-list li {
+   background-color: #495057; /* Darker grey for list items */
+   border-radius: 4px; /* Slightly rounded corners */
+   margin-bottom: 10px; /* Space between items */
+   padding: 10px; /* Padding for list items */
+   display: flex; /* Flex layout for item and buttons */
+   align-items: center; /* Align items vertically */
+   justify-content: space-between; /* Space out items */
+   cursor: pointer; /* Pointer cursor on hover */
+   transition: background-color 0.3s ease; /* Smooth background transition */
+ }
+ 
+ .task-list li:hover {
+   background-color: #6c757d; /* Lighter grey on hover */
+ }
+ 
+ .task-list li div {
+   flex-grow: 1; /* Allow title and description to grow */
+   margin-right: 10px; /* Space between text and buttons */
+ }
+ 
+ .task-list .task-button {
+   background-color: #007bff; /* Blue color for button */
+   color: white; /* White text color */
+   border: none; /* No border */
+   border-radius: 4px; /* Slightly rounded corners */
+   padding: 5px 10px; /* Compact padding for button */
+   cursor: pointer; /* Pointer cursor on hover */
+   margin-left: 5px; /* Space between buttons */
+   transition: background-color 0.3s ease; /* Smooth transition effect */
+ }
+ 
+ .task-list .task-button:hover {
+   background-color: #0056b3; /* Darker blue on hover */
+ }
+ 
+ .task-list form {
+   background-color: #495057; /* Darker grey for form */
+   border-radius: 4px; /* Rounded corners */
+   padding: 15px; /* Padding for form */
+   margin-top: 15px; /* Space above the form */
+ }
+ 
+ .task-list form input,
+ .task-list form textarea {
+   width: 100%; /* Full width inputs and textarea */
+   padding: 10px; /* Padding for inputs and textarea */
+   margin-bottom: 10px; /* Space between elements */
+   border: 1px solid #ced4da; /* Light grey border */
+   border-radius: 4px; /* Rounded corners */
+   background-color: #6c757d; /* Grey background */
+   color: white; /* White text */
+ }
+ 
+ .task-list form button {
+   background-color: #28a745; /* Green color for button */
+   color: white; /* White text color */
+   border: none; /* No border */
+   border-radius: 4px; /* Rounded corners */
+   padding: 10px 15px; /* Padding for button */
+   cursor: pointer; /* Pointer cursor on hover */
+   transition: background-color 0.3s ease; /* Smooth transition effect */
+ }
+ 
+ .task-list form button:hover {
+   background-color: #218838; /* Darker green on hover */
+ }
+ 

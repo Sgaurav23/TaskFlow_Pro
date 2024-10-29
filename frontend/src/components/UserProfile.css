@@ -1,0 +1,34 @@
+.user-profile {
+  background-color: #343a40; /* Dark grey background */
+  border-radius: 8px; /* Rounded corners */
+  padding: 15px; /* Padding for spacing */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  text-align: center; /* Center align text */
+  flex: 0 1 250px; /* Flexible width */
+  margin: 10px; /* Margin for spacing around */
+  color: white; /* White text for contrast */
+}
+
+.user-profile h2 {
+  color: #ffffff; /* White for name */
+  margin-bottom: 8px; /* Spacing below the name */
+}
+
+.user-profile p {
+  color: #adb5bd; /* Light grey for email */
+  margin-bottom: 15px; /* Spacing below the email */
+}
+
+.user-profile button {
+  background-color: #007bff; /* Blue color for button */
+  color: white; /* White text color */
+  border: none; /* No border */
+  border-radius: 4px; /* Slightly rounded corners */
+  padding: 8px 16px; /* Compact padding for button */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease; /* Smooth transition effect */
+}
+
+.user-profile button:hover {
+  background-color: #0056b3; /* Darker shade of blue on hover */
+}

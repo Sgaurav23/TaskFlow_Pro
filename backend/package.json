@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "lodash": "^4.17.21",
+    "module": "^1.1.0",
+    "module-name": "^0.0.1-security",
+    "mongoose": "^8.4.1",
+    "os": "^0.1.2"
+  },
+  "scripts": {
+    "start": "node server",
+    "dev": "nodemon server.js"
+  }
+}
