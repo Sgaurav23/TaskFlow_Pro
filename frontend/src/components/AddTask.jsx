@@ -12,7 +12,7 @@ const AddTask = ({ onTaskAdded }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post('http://localhost:5000/api/tasks', { title, description }, {
+      const res = await axios.post('https://descriptive-coffee-cardboard.glitch.me/api/tasks', { title, description }, {
         headers: { Authorization: `Bearer ${state.token}` }
       });
       console.log('Task added:', res.data);

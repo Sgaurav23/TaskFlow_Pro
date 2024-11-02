@@ -14,7 +14,7 @@ const TaskList = ({ tasks, fetchTasks }) => {
 
   const handleDelete = async (id) => {
     try {
-      await axios.delete(`http://localhost:5000/api/tasks/${id}`, {
+      await axios.delete(`https://descriptive-coffee-cardboard.glitch.me/api/tasks/${id}`, {
         headers: { Authorization: `Bearer ${state.token}` }
       });
       fetchTasks();
@@ -41,7 +41,7 @@ const TaskList = ({ tasks, fetchTasks }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.put(`http://localhost:5000/api/tasks/${editTask._id}`, { title, description }, {
+      await axios.put(`https://descriptive-coffee-cardboard.glitch.me/api/tasks/${editTask._id}`, { title, description }, {
         headers: { Authorization: `Bearer ${state.token}` }
       });
       fetchTasks();
@@ -57,7 +57,7 @@ const TaskList = ({ tasks, fetchTasks }) => {
 
   const handleMarkCompleted = async (id) => {
     try {
-      await axios.put(`http://localhost:5000/api/tasks/${id}`, { status: 'completed' }, {
+      await axios.put(`https://descriptive-coffee-cardboard.glitch.me/api/tasks/${id}`, { status: 'completed' }, {
         headers: { Authorization: `Bearer ${state.token}` }
       });
       fetchTasks(); // Refresh task list

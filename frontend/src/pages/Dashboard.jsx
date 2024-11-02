@@ -14,7 +14,7 @@ const Dashboard = () => {
   const fetchTasks = useCallback(async () => {
     try {
       console.log('Token used for fetching tasks:', state.token);
-      const res = await axios.get('http://localhost:5000/api/tasks', {
+      const res = await axios.get('https://descriptive-coffee-cardboard.glitch.me/api/tasks', {
         headers: { Authorization: `Bearer ${state.token}` }
       });
       console.log('Fetched tasks:', res.data);
@@ -26,7 +26,7 @@ const Dashboard = () => {
 
   const fetchUserData = useCallback(async () => {
     try {
-      const userRes = await axios.get('http://localhost:5000/api/auth/user', {
+      const userRes = await axios.get('https://descriptive-coffee-cardboard.glitch.me/api/auth/user', {
         headers: { Authorization: `Bearer ${state.token}` }
       });
       console.log('Fetched user data:', userRes.data);

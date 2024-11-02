@@ -16,7 +16,7 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post('http://localhost:5000/api/auth/login', formData);
+      const res = await axios.post('https://descriptive-coffee-cardboard.glitch.me/api/auth/login', formData);
       console.log('Response data:', res.data);
       dispatch({ type: 'LOGIN', payload: { user: res.data.user, token: res.data.token } });
       navigate('/dashboard');

@@ -16,10 +16,10 @@ const Register = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post('http://localhost:5000/api/auth/register', formData);
+      const res = await axios.post('https://descriptive-coffee-cardboard.glitch.me/api/auth/register', formData);
       console.log('Response data:', res.data);
       localStorage.setItem('token', res.data.token);
-      const userRes = await axios.get('http://localhost:5000/api/auth/user', {
+      const userRes = await axios.get('https://descriptive-coffee-cardboard.glitch.me/api/auth/user', {
         headers: { Authorization: `Bearer ${res.data.token}` }
       });
       console.log('User data:', userRes.data);

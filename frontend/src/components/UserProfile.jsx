@@ -8,7 +8,7 @@ const UserProfile = () => {
 
   const handleDelete = async () => {
     try {
-      await axios.delete(`http://localhost:5000/api/users/${state.user._id}`, {
+      await axios.delete(`https://descriptive-coffee-cardboard.glitch.me/api/users/${state.user._id}`, {
         headers: { Authorization: `Bearer ${state.token}` }
       });
       dispatch({ type: 'LOGOUT' });

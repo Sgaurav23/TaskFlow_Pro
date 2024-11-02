@@ -31,13 +31,14 @@ import { UserContext } from './context/UserContext';
 import Login from './pages/Login';
 import Register from './pages/Register';
 import Dashboard from './pages/Dashboard';
+import Home from './pages/Home';
 import { io } from 'socket.io-client';
 
 const App = () => {
   const { state } = useContext(UserContext);
 
   useEffect(() => {
-    const socket = io('http://localhost:5000');
+    const socket = io('https://descriptive-coffee-cardboard.glitch.me');
     socket.on('connect', () => {
       console.log('connected to server');
     });
@@ -51,6 +52,7 @@ const App = () => {
 
   return (
     <Routes>
+      <Route path="/" element={<Home />} />
       <Route path="/register" element={<Register />} />
       <Route path="/login" element={<Login />} />
       <Route path="/dashboard" element={state.token ? <Dashboard /> : <Navigate to="/login" />} />
